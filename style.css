@@ -1,0 +1,220 @@
+/**
+Theme Name: melomi
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: melomi
+Template: twentytwentyfour
+*/
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 1rem;
+    overflow-x: hidden;
+
+    background: #fff;
+    font-style: normal;
+
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    display: block;
+}
+/* WPForms fixes */
+/* Initial field looks */
+.wpforms-container input[type=date],
+.wpforms-container input[type=datetime],
+.wpforms-container input[type=datetime-local],
+.wpforms-container input[type=email],
+.wpforms-container input[type=month],
+.wpforms-container input[type=number],
+.wpforms-container input[type=password],
+.wpforms-container input[type=range],
+.wpforms-container input[type=search],
+.wpforms-container input[type=tel],
+.wpforms-container input[type=text],
+.wpforms-container input[type=time],
+.wpforms-container input[type=url],
+.wpforms-container input[type=week],
+.wpforms-container select,
+.wpforms-container textarea {
+    background: #fff;
+    border-width: 0 0 1px 0;
+    color: var(--ast-global-color-2);
+    opacity: 0.5;
+}
+/* On focus */
+.wpforms-container input:focus,
+.wpforms-container select:focus,
+.wpforms-container textarea:focus {
+    outline: none;
+    opacity: 1;
+    border-color: var(--ast-global-color-0);
+}
+/* Don't allow resizing the Message box */
+.wpforms-container textarea {
+    resize: none;
+}
+/* Message box fixed height */
+.wpforms-container .wpforms-field-textarea textarea.wpforms-field-medium {
+    height: 136px;
+}
+/* Button size & font size */
+.wpforms-container button {
+    padding: 15px 34px;
+    font-size: 15px;
+}
+/* WPForms done */
+/* Footer 2 big columns on sides and 1 small one in the middle */
+.ast-builder-grid-row-3-equal .ast-builder-grid-row {
+    grid-template-columns: 3fr 1fr 3fr;
+}
+
+.custom-button{
+
+}
+.circle-button a.uagb-buttons-repeater{ 
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    border: none !important;
+    background: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.circle-button a.uagb-buttons-repeater:focus{
+    outline: none;
+}
+
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__link,
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__link 
+{   
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    /* left: 45px;  */
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4A4A4A;
+}
+
+/* circle button large */
+.circle-button.circle-button-large{
+    position: relative;
+    width: 232px;
+}
+.circle-button.circle-button-large a.uagb-buttons-repeater{ 
+    width: 180px !important;
+    height: 180px !important;
+}
+
+/* circle button small */
+.circle-button.circle-button-small, 
+.circle-button.circle-button-large{
+    position: relative;
+    width: 196px;
+}
+.circle-button.circle-button-small a.uagb-buttons-repeater, 
+.circle-button.circle-button-large a.uagb-buttons-repeater{ 
+    width: 104px !important;
+    height: 104px !important;
+}
+
+/* At the top level of your code */
+@media screen and (min-width: 570px) {
+    /* circle button large */
+    .circle-button.circle-button-large{
+        position: relative;
+        width: 196px;
+    }
+    .circle-button.circle-button-large a.uagb-buttons-repeater{ 
+        width: 104px !important;
+        height: 104px !important;
+    }
+  }
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon, 
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon {
+    transform: translate(72px, 8px);
+    position: relative;
+    z-index: 10;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon svg, 
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon svg {
+    display: none;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:after,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #4A4A4A;
+    border-left: 1px solid #4A4A4A;
+    transform: rotate(135deg) translate(5px, 5px);
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:before,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:before{
+    content: "";
+    display: block;
+    width: 136px;
+    height: 1px;
+    background-color: #4A4A4A;
+    left: 0;
+    top: 0;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.whitespace-nowrap
+{
+    white-space: nowrap;
+}
+
+.uagb-icon-wrapper {
+    cursor: pointer;
+}
+
+.gradient {
+    background-image: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+
+.gradient:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;}
+ 
+.rounded-full{
+    border-radius: 100%;
+}
+
+.break-keep, .wp-block-uagb-advanced-heading.break-keep p{
+    word-break: keep-all !important;
+}
+
+.spectra-cat-cards .wp-block-uagb-marketing-button{
+    margin-top: -64px;
+    display: flex;
+}
+.spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link{
+    width:100%
+}
