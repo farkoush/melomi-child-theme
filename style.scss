@@ -218,3 +218,32 @@ body {
 .spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link{
     width:100%;
 }
+
+
+@media screen and (min-width: 600px){
+    .has-mega-menu{
+        position:static;
+    }
+    li.has-mega-menu .sub-menu {
+        width: 100%;
+        position: absolute;
+        top: NNpx; /*insert the needed value*/
+        z-index: 100;
+        left:0px;
+        right:0px;
+    }
+    li.has-mega-menu:hover>.sub-menu{
+    /*flexbox fallback for browsers that do not support CSS GRID lyout*/
+        display: flex;
+        flex-wrap: wrap;
+    /*CSS GRID lyout*/ 
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(50%, 1fr));   
+    }
+}
+@media screen and (min-width: 992px){
+    li.has-mega-menu:hover>.sub-menu{grid-template-columns: repeat(auto-fit,minmax(33.3333%, 1fr)); }
+}
+@media screen and (min-width: 1200px){
+    li.has-mega-menu:hover>.sub-menu{grid-template-columns: repeat(auto-fit,minmax(25%, 1fr)); }
+}
