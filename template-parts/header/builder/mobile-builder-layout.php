@@ -51,6 +51,7 @@ if ( 'full-width' === $astra_mobile_header_type ) {
 			$astra_alignment_class   = 'content-align-' . $astra_content_alignment . ' ';
 			?>
 			<div class="ast-mobile-header-content <?php echo esc_attr( $astra_alignment_class ); ?>">
+				mobileeee
 				<?php do_action( 'astra_mobile_header_content', 'popup', 'content' ); ?>
 			</div>
 			<?php

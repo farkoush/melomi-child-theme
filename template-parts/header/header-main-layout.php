@@ -18,7 +18,6 @@
 	<div <?php echo wp_kses_post( astra_attr( 'main-header-bar' ) ); ?>>
 		<?php astra_main_header_bar_top(); ?>
 		<div class="ast-container">
-
 			<div class="ast-flex main-header-container">
 				<?php astra_masthead_content(); ?>
 			</div><!-- Main Header Container -->

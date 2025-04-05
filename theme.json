@@ -1,5 +1,11 @@
 {
 	"version": 2,
+	"patterns": [
+		{
+			"slug": "astra-child/hero-section",
+			"path": "patterns/hero-section.php"
+		}
+	],
 	"settings": {
 	  "color": {
 		"defaultGradients": false,
