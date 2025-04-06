@@ -115,3 +115,29 @@ add_action('init', function() {
         'label' => __('Mega Menus', 'astra-child')
     ]);
 });
+
+// remove_action( 'astra_header', 'astra_primary_header', 10 );
+
+add_action( 'wp', 'astra_remove_header' );
+
+function astra_remove_header() {
+    remove_action( 'astra_masthead', 'astra_masthead_primary_template' );
+}
+
+
+function my_child_theme_register_block_patterns() {
+    register_block_pattern(
+        'astra-child/mega-menu',
+        array(
+            'title'       => __( 'Mega Menu', 'text-domain' ),
+            'description' => __( 'A custom mega menu pattern.', 'text-domain' ),
+            'content'     => file_get_contents( get_theme_file_path( '/patterns/mega-menu.php' ) ),
+        )
+    );
+}
+add_action( 'init', 'my_child_theme_register_block_patterns' );
+
+function load_custom_header() {
+    get_template_part( 'templates/header' );
+}
+add_action( 'wp_head', 'load_custom_header', 5 );
