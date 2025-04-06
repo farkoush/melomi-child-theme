@@ -1,14 +1,62 @@
 /**
-Theme Name: astra-child
+Theme Name: twentytwentyfour-child
 Author: Brainstorm Force
 Author URI: http://wpastra.com/about/
 Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: astra-child
-Template: astra
+Text Domain: twentytwentyfour-child
+Template: twentytwentyfour
 */
+
+$text-dark: #4A4A4A;
+
+//   {
+//     "name": "Theme Color 2",
+//     "slug": "ast-global-color-1",
+//     "color": "#FEF5F6"
+//   },
+//   {
+//     "name": "Theme Color 3",
+//     "slug": "ast-global-color-2",
+//     "color": "#4A4A4A"
+//   },
+//   {
+//     "name": "Theme Color 4",
+//     "slug": "ast-global-color-3",
+//     "color": "#757575"
+//   },
+//   {
+//     "name": "Theme Color 5",
+//     "slug": "ast-global-color-4",
+//     "color": "#ffffff"
+//   },
+//   {
+//     "name": "Theme Color 6",
+//     "slug": "ast-global-color-5",
+//     "color": "#FDF3D0"
+//   },
+//   {
+//     "name": "Theme Color 7",
+//     "slug": "ast-global-color-6",
+//     "color": "#617278"
+//   },
+//   {
+//     "name": "Theme Color 8",
+//     "slug": "ast-global-color-7",
+//     "color": "#BBBBA0"
+//   },
+//   {
+//     "name": "Theme Color 9",
+//     "slug": "ast-global-color-8",
+//     "color": "var(--ast-global-color-8)"
+//   },
+//   {
+//     "name": "Theme Color 10",
+//     "slug": "ast-global-color-8",
+//     "color": "var(--ast-global-color-8)"
+//   }
 
 body {
     font-family: 'Open Sans',sans-serif;
@@ -249,71 +297,43 @@ body {
 }
 
 
-// @media (min-width: 1025px) {
-//     .offcanvas-menu {
-//         position: fixed;
-//         top: 0;
-//         right: -300px;
-//         width: 300px;
-//         height: 100vh;
-//         background: white;
-//         box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-//         transition: right 0.3s ease;
-//         z-index: 9999;
-//         padding: 20px;
-//     }
-  
-//     .offcanvas-menu.active {
-//         right: 0;
-//     }
-  
-//     .desktop-toggle-button {
-//         background: none;
-//         border: none;
-//         font-size: 20px;
-//         cursor: pointer;
-//     }
-//   }
+.melomi-mega-menu{
+    // background-repeat: no-repeat;
+    // background-image: linear-gradient(transparent calc(100% - 3px), #fff 3px);
+    // -webkit-transition: background-size 0.4s;
+    // transition: background-size 0.4s;
+    // background-size: 0 98%;
+    // background-position-x: right;
+    // padding-bottom: 8px !important;
+}
 
-@media (min-width: 920px) {
+// @media (min-width: 920px) {
     .offcanvas-menu {
         position: fixed;
-        top: -100vh;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
         background: white;
         box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-        transition: right 0.3s ease;
         z-index: 9999;
         padding: 20px;
-                display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        padding: 20px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // text-align: center;
+        // flex-direction: column;
+        // opacity: 0;
+        // z-index: -9999;
+        
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
     }
-    //     .offcanvas-menu {
-//         position: fixed;
-//         top: -100vh; /* در حالت پیش‌فرض مخفی */
-//         left: 0;
-//         width: 100%;
-//         height: 100vh;
-//         background: rgba(0, 0, 0, 0.9);
-//         color: white;
-//         transition: top 0.4s ease-in-out;
-//         z-index: 10000;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         text-align: center;
-//         flex-direction: column;
-//         padding: 20px;
-//     }
   
     .offcanvas-menu.active {
-        top: 0;
+        transform: translateY(0);    
+        // z-index: 10;
+        // opacity: 1;
     }
   
     .desktop-toggle-button {
@@ -326,123 +346,117 @@ body {
             background: none !important;
         }
     }
-  }
-
-// @media (min-width: 1025px) {
-//     /* دکمه منو */
-//     .desktop-toggle-button {
-//         background: none;
-//         border: none;
-//         font-size: 20px;
-//         cursor: pointer;
-//         position: fixed;
-//         top: 20px;
-//         left: 20px;
-//         z-index: 10001;
-//         background: #000;
-//         color: #fff;
-//         padding: 10px 20px;
-//         border-radius: 5px;
-//     }
-
-//     /* استایل منو */
-//     .offcanvas-menu {
-//         position: fixed;
-//         top: -100vh; /* در حالت پیش‌فرض مخفی */
-//         left: 0;
-//         width: 100%;
-//         height: 100vh;
-//         background: rgba(0, 0, 0, 0.9);
-//         color: white;
-//         transition: top 0.4s ease-in-out;
-//         z-index: 10000;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         text-align: center;
-//         flex-direction: column;
-//         padding: 20px;
-//     }
-
-//     .offcanvas-menu.active {
-//         top: 0; /* وقتی منو باز شد، به بالا بیاید */
-//     }
-
-//     /* استایل آیتم‌های منو */
-//     .custom-offcanvas-menu {
-//         list-style: none;
-//         padding: 0;
-//         margin: 0;
-//     }
-
-//     .custom-offcanvas-menu li {
-//         margin: 15px 0;
-//     }
-
-//     .custom-offcanvas-menu a {
-//         color: white;
-//         font-size: 24px;
-//         text-decoration: none;
-//         transition: color 0.3s;
-//     }
-
-//     .custom-offcanvas-menu a:hover {
-//         color: #f00;
-//     }
-// }
+//   }
 
 
 
-.melomi-mega-menu{
-    background-repeat: no-repeat;
-    background-image: linear-gradient(transparent calc(100% - 3px), #fff 3px);
-    -webkit-transition: background-size 0.4s;
-    transition: background-size 0.4s;
-    background-size: 0 98%;
-    background-position-x: right;
-    padding-bottom: 8px !important;
+.wp-block-navigation__responsive-container{
+        column-gap: 24px;
+        flex-wrap: wrap;
+        padding: 0 24px 0 24px;
+    .wp-block-navigation-submenu{
+
+        border: 0 !important;
+        left: 0 !important;
+    }
+    .wp-block-navigation-item, .wp-block-navigation-submenu>.wp-block-navigation-item, .wp-block-navigation-item.current-menu-item { //menu-item
+        line-height: 40px;
+        &.current-menu-item {
+            .wp-block-navigation-item__content {
+                color:#4a4a4a;                    
+                background-image: linear-gradient(transparent calc(100% - 1px), #4a4a4a 3px);
+                background-size: 100% 98%;
+            }
+        }
+        .wp-block-navigation-item__content { //menu-link
+            display: inline-flex;
+            background-repeat: no-repeat !important;
+            background-image: linear-gradient(transparent calc(100% - 1px), #4a4a4a 3px) !important;
+            -webkit-transition: background-size 0.4s !important;
+            transition: background-size 0.4s !important;
+            background-size: 0 98% !important;
+            background-position-x: right !important;
+            padding: 0 !important;
+            &:before {
+                content: none !important;
+            }
+            &:hover, &:focus {
+                color: inherit !important;
+                background-size: 100% 98% !important;
+                background-position-x: left !important;
+                background-color: unset !important;
+            }
+        }
+    }
 }
-
-
-.ast-desktop {
-    .site-navigation {
-        .main-navigation {
-
-            .ast-menu-hover-style-underline, .ast-nav-menu{
-                    column-gap: 24px;
-                    flex-wrap: wrap;
-                    padding: 0 24px 0 24px;
-                >.menu-item, .sub-menu>.menu-item, >.menu-item.current-menu-item {
-                    line-height: 40px;
-                    &.current-menu-item {
-                        .menu-link {
-                            color: var(--ast-global-color-3);                    
-                            background-image: linear-gradient(transparent calc(100% - 1px), var(--ast-global-color-3) 3px);
-                            background-size: 100% 98%;
-                        }
+//mega menu
+.offcanvas-menu{
+    .wp-block-navigation__container{
+        column-gap: 24px;
+        flex-wrap: wrap;
+        padding: 0 24px 0 24px;
+        .wp-block-navigation-submenu{
+            display: flex;
+            flex-direction: column;
+            border: 0 !important;
+            left: 0 !important;
+    
+            .wp-block-navigation-submenu__toggle{
+                &::after {
+                    font-family: 'icomoon';
+                    content: "\e90c";
+                    color: #fff;
+                    font-size: 24px;
+                    padding: 0 0 0 16px;
+                }
+                &[aria-expanded="true"]{
+                    &::after {
+                        transform: rotate(-90deg);
                     }
-                    > .menu-link {
-                        background-repeat: no-repeat;
-                        background-image: linear-gradient(transparent calc(100% - 1px), var(--ast-global-color-3) 3px);
-                        -webkit-transition: background-size 0.4s;
-                        transition: background-size 0.4s;
-                        background-size: 0 98%;
-                        background-position-x: right;
-                        padding: 0;
-                        &:before {
-                            content: none;
-                        }
-                        &:hover, &:focus {
-                            color: inherit;
-                            background-size: 100% 98%;
-                            background-position-x: left;
-                            background-color: unset !important;
-                        }
-                    }
+                }
+            }
+            .wp-block-navigation__submenu-icon {
+                display: none;
+            }
+            .wp-block-navigation__submenu-container{
+                position: relative;
+                background-color: unset !important;
+                color: #fff !important;
+            }
+        }
+        .wp-block-navigation-item, .wp-block-navigation-submenu>.wp-block-navigation-item, .wp-block-navigation-item.current-menu-item { //menu-item
+            line-height: 40px;
+            &.current-menu-item {
+                .wp-block-navigation-item__content {
+                    color:#fff;                    
+                    background-image: linear-gradient(transparent calc(100% - 3px), #fff 3px);
+                    background-size: 100% 98%;
+                }
+            }
+            .wp-block-navigation-item__content { //menu-link
+                display: inline-flex;
+                background-repeat: no-repeat !important;
+                background-image: linear-gradient(transparent calc(100% - 3px), #fff 3px) !important;
+                -webkit-transition: background-size 0.4s !important;
+                transition: background-size 0.4s !important;
+                background-size: 0 98% !important;
+                background-position-x: right !important;
+                padding: 0 !important;
+                &:before {
+                    content: none !important;
+                }
+                &:hover, &:focus {
+                    color: inherit !important;
+                    background-size: 100% 98% !important;
+                    background-position-x: left !important;
+                    background-color: unset !important;
                 }
             }
         }
     }
-} 
+}
 
 
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){
+    text-decoration: none !important;
+}

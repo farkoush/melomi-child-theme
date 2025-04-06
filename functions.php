@@ -17,117 +17,41 @@ define( 'CHILD_THEME_MELOMI_VERSION', '1.0.0' );
  * Enqueue styles
  */
 function child_enqueue_styles() {
-	wp_enqueue_style( 'melomi-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_MELOMI_VERSION, 'all' );
 	wp_enqueue_style('icomoon-style',get_stylesheet_directory_uri() . '/assets/style.css');
+	wp_enqueue_style( 
+		'grand-sunrise-style', 
+		get_stylesheet_uri()
+	);
+	wp_enqueue_style( 
+		'grand-sunrise-parent-style', 
+		get_parent_theme_file_uri( 'style.css' )
+	);
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 100 );
 
+
 function custom_enqueue_scripts() {
     wp_enqueue_script('custom-menu-script', get_stylesheet_directory_uri() . '/scripts.js', array(), false, true);
 }
-// add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
 function register_my_menu() {
-	register_nav_menu('astra-child-mega-menu',__( 'Melomi Mega Menu' ));
+	register_nav_menu('twentytwentyfour-child-mega-menu',__( 'Melomi Mega Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
 
-// function astra_child_register_patterns() {
-//     // مسیر کامل به پوشه پترن‌ها
-//     $patterns_dir = get_stylesheet_directory() . '/patterns/';
 
-//     // فایل‌ها رو بگیر
-//     $pattern_files = glob($patterns_dir . '*.php');
-	
-//     // یک دسته‌بندی بساز (اختیاری)
-//     register_block_pattern_category(
-//         'custom',
-//         array('label' => __('Custom Patterns', 'astra-child'))
-//     );
-
-//     foreach ($pattern_files as $file) {
-//         register_block_pattern(
-//             'astra-child/' . basename($file, '.php'),
-//             require $file
-//         );
-//     }
-// }
-// add_action('init', 'astra_child_register_patterns');
-
-// if ( ! function_exists( 'astrachild_pattern_categories' ) ) :
-// 	/**
-// 	 * Register pattern categories
-// 	 *
-// 	 * @return void
-// 	 */
-// 	function twentytwentyfour_pattern_categories() {
-
-// 		register_block_pattern_category(
-// 			'astraChild_melomi',
-// 			array(
-// 				'label'       => _x( 'Pages', 'Block pattern category', 'astrachild' ),
-// 				'description' => __( 'A collection of full page layouts.', 'astrachild' ),
-// 			)
-// 		);
-// 	}
-// endif;
-
-// add_action( 'init', 'astrachild_pattern_categories' );
-
-
-function astra_primary_header_HTML() {
-
-
-	$astra_header_row = 'primary';
-	$pattern_content = '<!-- wp:pattern {"slug":"astra-child/mega-menu"} /-->';
-	if ( Astra_Builder_Helper::has_side_columns( $astra_header_row ) ) { 
-
-    ?>
-		<button id="desktop-menu-toggle" class="desktop-toggle-button" aria-expanded="false" aria-controls="desktop-offcanvas-menu">
-			☰
-		</button>
-
-		<div id="desktop-offcanvas-menu" class="offcanvas-menu">
-			<nav class="menu-container">
-				<p>test</p>
-				<?php
-				// wp_nav_menu(array(
-				// 	'theme_location' => 'primary', // یا لوکیشن دلخواه تو
-				// 	'container' => false,
-				// 	'menu_class' => 'custom-offcanvas-menu',
-				// ));
-					// echo do_blocks($pattern_content);
-				// if (has_block( 'astra-child/mega-menu')) {
-				// } else {
-				// 	echo '<p>Pattern not found</p>';
-				// }
-				// echo('<!-- wp:pattern {"slug":"astra-child/mega-menu"} /-->')
-				?>
-			</nav>
-		</div>
-	<?php
-	}
-}
-//add_action( 'astra_header_html_1', 'astra_primary_header_HTML');
-add_action('init', function() {
-    register_block_pattern_category('mega', [
-        'label' => __('Mega Menus', 'astra-child')
-    ]);
-});
-
-// remove_action( 'astra_header', 'astra_primary_header', 10 );
-
-add_action( 'wp', 'astra_remove_header' );
-
-function astra_remove_header() {
-    remove_action( 'astra_masthead', 'astra_masthead_primary_template' );
-}
+// add_action('init', function() {
+//     register_block_pattern_category('melomi', [
+//         'label' => __('Melomi', 'twentytwentyfour-child')
+//     ]);
+// });
 
 
 function my_child_theme_register_block_patterns() {
     register_block_pattern(
-        'astra-child/mega-menu',
+        'twentytwentyfour-child/mega-menu',
         array(
             'title'       => __( 'Mega Menu', 'text-domain' ),
             'description' => __( 'A custom mega menu pattern.', 'text-domain' ),
@@ -137,7 +61,37 @@ function my_child_theme_register_block_patterns() {
 }
 add_action( 'init', 'my_child_theme_register_block_patterns' );
 
-function load_custom_header() {
-    get_template_part( 'templates/header' );
+
+// Register template parts and patterns
+function register_custom_templates_and_patterns() {
+    register_block_pattern_category( 'custom', array( 'label' => 'Custom Patterns' ) );
+
+    // Register template part for header
+    // register_block_template_part( 'header', get_template_directory() . '/parts/header.html' );
 }
-add_action( 'wp_head', 'load_custom_header', 5 );
+// add_action( 'after_setup_theme', 'register_custom_templates_and_patterns' );
+
+
+// function load_custom_header() {
+//     get_template_part( 'templates/header' );
+// }
+// add_action( 'wp_head', 'load_custom_header', 5 );
+
+// function melomi_child_enqueue_block_assets() {
+//     // بررسی اینکه آیا اسپکترا فعال است یا نه و استایل‌های آن را بارگذاری کنیم
+//     // if ( function_exists( 'spectra_plugin_function' ) ) {
+//         wp_enqueue_style( 'spectra-blocks-style', plugin_dir_url( __FILE__ ) . 'assets/css/spectra-block-positioning.min.css?ver=2.19.4' );
+//     // }
+// }
+// add_action( 'enqueue_block_assets', 'melomi_child_enqueue_block_assets',1000 );
+
+// add_action( 'wp_enqueue_scripts', 'enqueue_scripts_by_post_id' );
+
+// function enqueue_scripts_by_post_id() {
+
+//     // Create Instance. Pass the Post ID.
+//     $post_assets_instance = new UAGB_Post_Assets( '220' );
+
+//     // Enqueue the Assets.
+//     $post_assets_instance->enqueue_scripts();
+// }

@@ -1,5 +1,5 @@
 {
-  "name": "astra-child",
+  "name": "twentytwentyfour-child",
   "version": "1.0.0",
   "description": "twentytwentyfour child theme",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farkoush/astra-child.git"
+    "url": "git+https://github.com/farkoush/twentytwentyfour-child.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/farkoush/astra-child/issues"
+    "url": "https://github.com/farkoush/twentytwentyfour-child/issues"
   },
-  "homepage": "https://github.com/farkoush/astra-child#readme",
+  "homepage": "https://github.com/farkoush/twentytwentyfour-child#readme",
   "dependencies": {
     "sass": "^1.86.0",
     "tailwind": "^2.3.1"

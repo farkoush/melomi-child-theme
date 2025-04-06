@@ -8,7 +8,7 @@
 	],
 	"patterns": [
 		{
-			"slug": "astra-child/mega-menu",
+			"slug": "twentytwentyfour-child/mega-menu",
 			"path": "patterns/mega-menu.php"
 		}
 	],
@@ -116,8 +116,8 @@
 		]
 	  },
 	  "layout": {
-		"contentSize": "var(--wp--custom--ast-content-width-size)",
-		"wideSize": "var(--wp--custom--ast-wide-width-size)",
+		"contentSize": "1440px",
+		"wideSize": "1440px",
 		"fullSize": "none"
 	  }
 	},
