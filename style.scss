@@ -317,10 +317,14 @@ body {
     }
   
     .desktop-toggle-button {
+        box-shadow: none !important;
         background: none;
         border: none;
         font-size: 20px;
         cursor: pointer;
+        &:hover{
+            background: none !important;
+        }
     }
   }
 
@@ -386,3 +390,59 @@ body {
 //         color: #f00;
 //     }
 // }
+
+
+
+.melomi-mega-menu{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent calc(100% - 3px), #fff 3px);
+    -webkit-transition: background-size 0.4s;
+    transition: background-size 0.4s;
+    background-size: 0 98%;
+    background-position-x: right;
+    padding-bottom: 8px !important;
+}
+
+
+.ast-desktop {
+    .site-navigation {
+        .main-navigation {
+
+            .ast-menu-hover-style-underline, .ast-nav-menu{
+                    column-gap: 24px;
+                    flex-wrap: wrap;
+                    padding: 0 24px 0 24px;
+                >.menu-item, .sub-menu>.menu-item, >.menu-item.current-menu-item {
+                    line-height: 40px;
+                    &.current-menu-item {
+                        .menu-link {
+                            color: var(--ast-global-color-3);                    
+                            background-image: linear-gradient(transparent calc(100% - 1px), var(--ast-global-color-3) 3px);
+                            background-size: 100% 98%;
+                        }
+                    }
+                    > .menu-link {
+                        background-repeat: no-repeat;
+                        background-image: linear-gradient(transparent calc(100% - 1px), var(--ast-global-color-3) 3px);
+                        -webkit-transition: background-size 0.4s;
+                        transition: background-size 0.4s;
+                        background-size: 0 98%;
+                        background-position-x: right;
+                        padding: 0;
+                        &:before {
+                            content: none;
+                        }
+                        &:hover, &:focus {
+                            color: inherit;
+                            background-size: 100% 98%;
+                            background-position-x: left;
+                            background-color: unset !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+

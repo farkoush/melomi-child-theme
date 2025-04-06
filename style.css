@@ -6,7 +6,7 @@ Description: Astra is the fastest, fully customizable & beautiful theme suitable
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: melomi
+Text Domain: astra-child
 Template: astra
 */
 body {
@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   font-size: 1rem;
   overflow-x: hidden;
-  background: red;
+  background: #fff;
   font-style: normal;
   outline: 0;
   padding: 0;
@@ -274,11 +274,56 @@ body {
     top: 0;
   }
   .desktop-toggle-button {
+    box-shadow: none !important;
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
   }
+  .desktop-toggle-button:hover {
+    background: none !important;
+  }
+}
+.melomi-mega-menu {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent calc(100% - 3px), #fff 3px);
+  -webkit-transition: background-size 0.4s;
+  transition: background-size 0.4s;
+  background-size: 0 98%;
+  background-position-x: right;
+  padding-bottom: 8px !important;
+}
+
+.ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline, .ast-desktop .site-navigation .main-navigation .ast-nav-menu {
+  column-gap: 24px;
+  flex-wrap: wrap;
+  padding: 0 24px 0 24px;
+}
+.ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline .sub-menu > .menu-item, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item, .ast-desktop .site-navigation .main-navigation .ast-nav-menu .sub-menu > .menu-item, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item {
+  line-height: 40px;
+}
+.ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item .menu-link, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline .sub-menu > .menu-item.current-menu-item .menu-link, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item.current-menu-item .menu-link, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item .menu-link, .ast-desktop .site-navigation .main-navigation .ast-nav-menu .sub-menu > .menu-item.current-menu-item .menu-link, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item.current-menu-item .menu-link {
+  color: var(--ast-global-color-3);
+  background-image: linear-gradient(transparent calc(100% - 1px), var(--ast-global-color-3) 3px);
+  background-size: 100% 98%;
+}
+.ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item > .menu-link, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline .sub-menu > .menu-item > .menu-link, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item > .menu-link, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item > .menu-link, .ast-desktop .site-navigation .main-navigation .ast-nav-menu .sub-menu > .menu-item > .menu-link, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item > .menu-link {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent calc(100% - 1px), var(--ast-global-color-3) 3px);
+  -webkit-transition: background-size 0.4s;
+  transition: background-size 0.4s;
+  background-size: 0 98%;
+  background-position-x: right;
+  padding: 0;
+}
+.ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item > .menu-link:before, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline .sub-menu > .menu-item > .menu-link:before, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item > .menu-link:before, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item > .menu-link:before, .ast-desktop .site-navigation .main-navigation .ast-nav-menu .sub-menu > .menu-item > .menu-link:before, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item > .menu-link:before {
+  content: none;
+}
+.ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item > .menu-link:hover, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item > .menu-link:focus, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline .sub-menu > .menu-item > .menu-link:hover, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline .sub-menu > .menu-item > .menu-link:focus, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item > .menu-link:hover, .ast-desktop .site-navigation .main-navigation .ast-menu-hover-style-underline > .menu-item.current-menu-item > .menu-link:focus, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item > .menu-link:hover, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item > .menu-link:focus, .ast-desktop .site-navigation .main-navigation .ast-nav-menu .sub-menu > .menu-item > .menu-link:hover, .ast-desktop .site-navigation .main-navigation .ast-nav-menu .sub-menu > .menu-item > .menu-link:focus, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item > .menu-link:hover, .ast-desktop .site-navigation .main-navigation .ast-nav-menu > .menu-item.current-menu-item > .menu-link:focus {
+  color: inherit;
+  background-size: 100% 98%;
+  background-position-x: left;
+  background-color: unset !important;
 }
 
 /*# sourceMappingURL=style.css.map */

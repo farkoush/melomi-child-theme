@@ -26,7 +26,12 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 100 );
 function custom_enqueue_scripts() {
     wp_enqueue_script('custom-menu-script', get_stylesheet_directory_uri() . '/scripts.js', array(), false, true);
 }
-add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+// add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+
+function register_my_menu() {
+	register_nav_menu('astra-child-mega-menu',__( 'Melomi Mega Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 
 // function astra_child_register_patterns() {
 //     // مسیر کامل به پوشه پترن‌ها
@@ -75,28 +80,38 @@ function astra_primary_header_HTML() {
 
 
 	$astra_header_row = 'primary';
+	$pattern_content = '<!-- wp:pattern {"slug":"astra-child/mega-menu"} /-->';
 	if ( Astra_Builder_Helper::has_side_columns( $astra_header_row ) ) { 
 
     ?>
 		<button id="desktop-menu-toggle" class="desktop-toggle-button" aria-expanded="false" aria-controls="desktop-offcanvas-menu">
-			☰ Menu
+			☰
 		</button>
 
 		<div id="desktop-offcanvas-menu" class="offcanvas-menu">
 			<nav class="menu-container">
 				<p>test</p>
-				<!-- wp:pattern {"slug":"astra-child/hero-section"} /-->
 				<?php
 				// wp_nav_menu(array(
 				// 	'theme_location' => 'primary', // یا لوکیشن دلخواه تو
 				// 	'container' => false,
 				// 	'menu_class' => 'custom-offcanvas-menu',
 				// ));
+					// echo do_blocks($pattern_content);
+				// if (has_block( 'astra-child/mega-menu')) {
+				// } else {
+				// 	echo '<p>Pattern not found</p>';
+				// }
+				// echo('<!-- wp:pattern {"slug":"astra-child/mega-menu"} /-->')
 				?>
-				<!-- wp:pattern {"slug":"astra-child/hero-section"} /-->
 			</nav>
 		</div>
 	<?php
 	}
 }
-add_action( 'astra_header_primary_container_after', 'astra_primary_header_HTML');
+//add_action( 'astra_header_html_1', 'astra_primary_header_HTML');
+add_action('init', function() {
+    register_block_pattern_category('mega', [
+        'label' => __('Mega Menus', 'astra-child')
+    ]);
+});

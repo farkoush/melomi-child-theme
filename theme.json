@@ -1,9 +1,15 @@
 {
 	"version": 2,
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		}
+	],
 	"patterns": [
 		{
-			"slug": "astra-child/hero-section",
-			"path": "patterns/hero-section.php"
+			"slug": "astra-child/mega-menu",
+			"path": "patterns/mega-menu.php"
 		}
 	],
 	"settings": {
