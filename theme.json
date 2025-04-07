@@ -10,6 +10,10 @@
 		{
 			"slug": "twentytwentyfour-child/mega-menu",
 			"path": "patterns/mega-menu.php"
+		},
+		{
+			"slug": "twentytwentyfour-child/footer-default",
+			"path": "patterns/footer-default.php"
 		}
 	],
 	"settings": {
