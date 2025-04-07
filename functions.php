@@ -39,3 +39,36 @@ function register_my_menu() {
     register_nav_menu('child-theme-mega-menu-small',__( 'Melomi Mega Menu - Small' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+
+function my_child_theme_register_block_patterns() {
+    register_block_pattern(
+        'twentytwentyfour-child/mega-menu',
+        array(
+            'title'       => __( 'Mega Menu', 'text-domain' ),
+            'description' => __( 'A custom mega menu pattern.', 'text-domain' ),
+            'content'     => file_get_contents( get_theme_file_path( '/patterns/mega-menu.php' ) ),
+        )
+    );
+    // register_block_pattern(
+    //     'twentytwentyfour-child/footer-defult',
+    //     array(
+    //         'title'       => __( 'Footer defult', 'text-domain' ),
+    //         'description' => __( 'A custom mega menu pattern.', 'text-domain' ),
+    //         'content'     => file_get_contents( get_theme_file_path( '/patterns/footer-defult.php' ) ),
+    //     )
+    // );
+}
+add_action( 'init', 'my_child_theme_register_block_patterns' );
+
+add_action('init', function () {
+    register_block_pattern(
+        'twentytwentyfour-child/footer-default',
+        [
+            'title'       => __('Footer Default', 'textdomain'),
+            'description' => __('A default footer layout', 'textdomain'),
+            'categories'  => ['footer'],
+            'content'     => file_get_contents(get_stylesheet_directory() . '/patterns/footer-default.php'),
+        ]
+    );
+});
