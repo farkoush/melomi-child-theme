@@ -17,7 +17,7 @@ define( 'CHILD_THEME_MELOMI_VERSION', '1.0.0' );
  * Enqueue styles
  */
 function child_enqueue_styles() {
-	wp_enqueue_style('icomoon-style',get_stylesheet_directory_uri() . '/assets/style.css');
+	wp_enqueue_style('icomoon-style',get_stylesheet_directory_uri() . '/assets/fonts/icomoon/style.css');
 	wp_enqueue_style( 
 		'grand-sunrise-style', 
 		get_stylesheet_uri()

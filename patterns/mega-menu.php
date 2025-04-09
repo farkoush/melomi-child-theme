@@ -1,55 +1,33 @@
-<?php
-/**
- * Title: Mega Menu
- * Slug: twentytwentyfour-child/mega-menu
- * Categories: navigation
- * Viewport width: 1400
- * Description: Two-column mega menu pattern.
- */
-?>
+<!-- wp:group {"metadata":{"categories":["banner"],"patternName":"twentytwentyfour/cta-content-image-on-right","name":"Call to action with image on right"},"align":"full","className":"offcanvas-menu melomi-mega-menu ","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-4"}}}},"backgroundColor":"ast-global-color-2","textColor":"ast-global-color-4","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull offcanvas-menu melomi-mega-menu has-ast-global-color-4-color has-ast-global-color-2-background-color has-text-color has-background has-link-color" id="desktop-offcanvas-menu" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"25%","className":"left-side"} -->
+<div class="wp-block-column is-vertically-aligned-center left-side" style="flex-basis:25%" id="left-side"><!-- wp:heading {"align":"left","fontFamily":"montserrat"} -->
+<h2 class="wp-block-heading has-montserrat-font-family">Products</h2>
+<!-- /wp:heading -->
 
-<!-- wp:uagb/container {"block_id":"29376ae4","topPaddingDesktop":0,"bottomPaddingDesktop":0,"leftPaddingDesktop":0,"rightPaddingDesktop":0,"topPaddingMobile":0,"bottomPaddingMobile":0,"leftPaddingMobile":0,"rightPaddingMobile":0,"variationSelected":true,"isBlockRootParent":true} -->
-<div class="wp-block-uagb-container uagb-block-29376ae4 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:uagb/buttons {"block_id":"3b53196a","classMigrate":true,"childMigrate":true} -->
-<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap uagb-btn__default-btn uagb-btn-tablet__default-btn uagb-btn-mobile__default-btn uagb-block-3b53196a"><div class="uagb-buttons__wrap uagb-buttons-layout-wrap "><!-- wp:uagb/buttons-child {"block_id":"22013fd0","link":"#","topMobilePadding":0,"rightMobilePadding":0,"bottomMobilePadding":0,"leftMobilePadding":0,"hColor":"","icon":"align-justify","iconColor":"#4A4A4A","removeText":true,"btnBorderTopWidth":0,"btnBorderLeftWidth":0,"btnBorderRightWidth":0,"btnBorderBottomWidth":0,"btnBorderStyle":"solid","btnBorderColor":"#333","btnBorderHColor":"#333","showIcon":true,"className":"desktop-menu-toggle"} -->
-<div class="wp-block-uagb-buttons-child uagb-buttons__outer-wrap uagb-block-22013fd0 wp-block-button desktop-menu-toggle" id="desktop-menu-toggle"><div class="uagb-button__wrapper"><a class="uagb-buttons-repeater wp-block-button__link" aria-label="Click Here" href="#" rel="follow noopener" target="_self" role="button"><span class="uagb-button__icon uagb-button__icon-position-after"><svg width="18" height="12" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H18V2H0V0ZM0 5.00001H18V7.00001H0V5.00001ZM0 10H18V12H0V10Z"></path></svg></span></a></div></div>
-<!-- /wp:uagb/buttons-child --></div></div>
-<!-- /wp:uagb/buttons --></div></div>
-<!-- /wp:uagb/container -->
+<!-- wp:navigation {"overlayMenu":"never","fontSize":"small","layout":{"type":"flex","orientation":"vertical"}} /-->
 
-<!-- wp:uagb/container {"block_id":"e05eb427","innerContentWidth":"alignfull","minHeightDesktop":100,"minHeightType":"vh","directionDesktop":"row","directionMobile":"column-reverse","alignItemsTablet":"center","justifyContentMobile":"center","backgroundType":"color","backgroundColor":"#4A4A4A","leftPaddingDesktop":256,"rightPaddingDesktop":256,"topPaddingTablet":48,"bottomPaddingTablet":48,"leftPaddingTablet":96,"rightPaddingTablet":96,"topPaddingMobile":0,"bottomPaddingMobile":0,"leftPaddingMobile":0,"rightPaddingMobile":0,"variationSelected":true,"isBlockRootParent":true,"className":"offcanvas-menu"} -->
-<div id="desktop-offcanvas-menu" class="wp-block-uagb-container offcanvas-menu uagb-block-e05eb427 alignfull uagb-is-root-container"><!-- wp:uagb/container {"block_id":"e5e8c285","directionDesktop":"row","alignItemsDesktop":"flex-start"} -->
-<div class="wp-block-uagb-container uagb-block-e5e8c285"><!-- wp:uagb/container {"block_id":"d2434cef","widthDesktop":20,"widthTablet":40,"alignItemsDesktop":"flex-start","topPaddingDesktop":0,"bottomPaddingDesktop":0,"leftPaddingDesktop":0,"rightPaddingDesktop":0,"topPaddingTablet":0,"bottomPaddingTablet":0,"leftPaddingTablet":0,"rightPaddingTablet":0,"topPaddingMobile":0,"bottomPaddingMobile":0,"leftPaddingMobile":0,"rightPaddingMobile":0,"paddingLink":false,"widthSetByUser":true,"className":"left-side"} -->
-<div class="wp-block-uagb-container left-side uagb-block-d2434cef"><!-- wp:uagb/advanced-heading {"block_id":"a8163d5c","classMigrate":true,"headingDescToggle":false,"headingColor":"#ffffff","headingTag":"h3","headFontFamily":"Montserrat","headFontSize":24,"headLoadGoogleFonts":true} -->
-<div class="wp-block-uagb-advanced-heading uagb-block-a8163d5c"><h3 class="uagb-heading-text">Products</h3></div>
-<!-- /wp:uagb/advanced-heading -->
+<!-- wp:social-links {"iconColor":"ast-global-color-4","iconColorValue":"#ffffff","openInNewTab":true,"size":"has-normal-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"0","left":"26px"}},"layout":{"selfStretch":"fixed","flexSize":"25%"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://www.instagram.com/melomi_dry_fruits/","service":"instagram","label":""} /-->
 
-<!-- wp:navigation {"ref":409,"textColor":"ast-global-color-4","showSubmenuIcon":false,"overlayMenu":"never","icon":"menu","overlayTextColor":"ast-global-color-2","fontSize":"small","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} /-->
+<!-- wp:social-link {"url":"#","service":"whatsapp","label":"#"} /--></ul>
+<!-- /wp:social-links --></div>
+<!-- /wp:column -->
 
-<!-- wp:uagb/container {"block_id":"0b8e3c2c","directionDesktop":"row","justifyContentDesktop":"flex-start","topPaddingDesktop":16,"bottomPaddingDesktop":0,"leftPaddingDesktop":0,"rightPaddingDesktop":0,"paddingLink":false} -->
-<div class="wp-block-uagb-container uagb-block-0b8e3c2c"><!-- wp:uagb/buttons {"block_id":"61b9fde6","classMigrate":true,"childMigrate":true,"align":"left","alignTablet":"left","alignMobile":"left","gap":16,"topMargin":0,"rightMargin":0,"bottomMargin":0,"leftMargin":0,"topPadding":0,"rightPadding":0,"bottomPadding":0,"leftPadding":0} -->
-<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap uagb-btn__default-btn uagb-btn-tablet__default-btn uagb-btn-mobile__default-btn uagb-block-61b9fde6"><div class="uagb-buttons__wrap uagb-buttons-layout-wrap "><!-- wp:uagb/buttons-child {"block_id":"855a75f2","link":"https://www.instagram.com/melomi_dry_fruits/","topPadding":0,"rightPadding":0,"bottomPadding":0,"leftPadding":0,"opensInNewTab":true,"icon":"instagram","topMargin":0,"rightMargin":0,"bottomMargin":0,"leftMargin":0,"iconColor":"#ffffff","iconHColor":"#617278","iconSize":24,"removeText":true,"btnBorderTopWidth":0,"btnBorderLeftWidth":0,"btnBorderRightWidth":0,"btnBorderBottomWidth":0,"btnBorderTopWidthTablet":0,"btnBorderLeftWidthTablet":0,"btnBorderRightWidthTablet":0,"btnBorderBottomWidthTablet":0,"btnBorderStyle":"solid","btnBorderColor":"#333","btnBorderHColor":"#617278","showIcon":true} -->
-<div class="wp-block-uagb-buttons-child uagb-buttons__outer-wrap uagb-block-855a75f2 wp-block-button"><div class="uagb-button__wrapper"><a class="uagb-buttons-repeater wp-block-button__link" aria-label="Click Here" href="https://www.instagram.com/melomi_dry_fruits/" rel="follow noopener" target="_blank" role="button"><span class="uagb-button__icon uagb-button__icon-position-after"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focussable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></span></a></div></div>
-<!-- /wp:uagb/buttons-child -->
+<!-- wp:column {"verticalAlignment":"center","width":"35%","UAGHideMob":true,"UAGHideTab":true,"UAGResponsiveConditions":true} -->
+<div class="wp-block-column is-vertically-aligned-center uag-hide-tab uag-hide-mob" style="flex-basis:35%"><!-- wp:image {"id":41,"aspectRatio":"3/4","scale":"contain","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
+<figure class="wp-block-image size-full is-style-rounded"><img src="http://melomi.local/wp-content/uploads/2025/03/screenshot.jpg" alt="" class="wp-image-41" style="aspect-ratio:3/4;object-fit:contain"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
 
-<!-- wp:uagb/buttons-child {"block_id":"d94b51f7","link":"tel:+432067657206920550","topPadding":0,"rightPadding":0,"bottomPadding":0,"leftPadding":0,"opensInNewTab":false,"icon":"phone-flip","topMargin":0,"rightMargin":0,"bottomMargin":0,"leftMargin":0,"iconColor":"#ffffff","iconHColor":"#617278","iconSize":24,"removeText":true,"btnBorderTopWidth":0,"btnBorderLeftWidth":0,"btnBorderRightWidth":0,"btnBorderBottomWidth":0,"btnBorderStyle":"solid","btnBorderColor":"#333","btnBorderHColor":"#617278","showIcon":true} -->
-<div class="wp-block-uagb-buttons-child uagb-buttons__outer-wrap uagb-block-d94b51f7 wp-block-button"><div class="uagb-button__wrapper"><a class="uagb-buttons-repeater wp-block-button__link" aria-label="Click Here" href="tel:+432067657206920550" rel="follow noopener" target="_self" role="button"><span class="uagb-button__icon uagb-button__icon-position-after"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focussable="false"><path d="M18.92 351.2l108.5-46.52c12.78-5.531 27.77-1.801 36.45 8.98l44.09 53.82c69.25-34 125.5-90.31 159.5-159.5l-53.81-44.04c-10.75-8.781-14.41-23.69-8.974-36.47l46.51-108.5c6.094-13.91 21.1-21.52 35.79-18.11l100.8 23.25c14.25 3.25 24.22 15.8 24.22 30.46c0 252.3-205.2 457.5-457.5 457.5c-14.67 0-27.18-9.968-30.45-24.22l-23.25-100.8C-2.571 372.4 5.018 357.2 18.92 351.2z"></path></svg></span></a></div></div>
-<!-- /wp:uagb/buttons-child --></div></div>
-<!-- /wp:uagb/buttons --></div>
-<!-- /wp:uagb/container --></div>
-<!-- /wp:uagb/container -->
+<!-- wp:column {"verticalAlignment":"center","width":"40%","className":"right-side"} -->
+<div class="wp-block-column is-vertically-aligned-center right-side" style="flex-basis:40%" id="right-side"><!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"ast-global-color-2","textColor":"ast-global-color-2","className":"close-offcanvas-menu icon-x","style":{"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-2"}}}},"fontSize":"medium"} -->
+<div class="wp-block-button has-custom-font-size close-offcanvas-menu icon-x has-medium-font-size" id="close-offcanvas-menu"><a class="wp-block-button__link has-ast-global-color-2-color has-ast-global-color-2-background-color has-text-color has-background has-link-color wp-element-button">X</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 
-<!-- wp:uagb/container {"block_id":"6aa6d3af","widthDesktop":38,"justifyContentDesktop":"flex-start","topPaddingDesktop":0,"bottomPaddingDesktop":0,"leftPaddingDesktop":0,"topPaddingTablet":0,"bottomPaddingTablet":0,"leftPaddingTablet":0,"rightPaddingTablet":0,"topPaddingMobile":0,"bottomPaddingMobile":0,"leftPaddingMobile":0,"rightPaddingMobile":0,"paddingLink":false,"widthSetByUser":true,"UAGHideMob":true,"UAGHideTab":true,"UAGResponsiveConditions":true} -->
-<div class="wp-block-uagb-container uag-hide-tab uag-hide-mob uagb-block-6aa6d3af"><!-- wp:uagb/image {"block_id":"6a6a55e9","url":"http://melomi.local/wp-content/uploads/2025/03/screenshot-200x300.jpg","urlTablet":"http://melomi.local/wp-content/uploads/2025/03/screenshot-683x1024.jpg","urlMobile":"http://melomi.local/wp-content/uploads/2025/03/screenshot-683x1024.jpg","id":41,"linkDestination":"none","title":"screenshot","width":200,"widthTablet":683,"widthMobile":683,"height":300,"heightTablet":1024,"heightMobile":1024,"naturalWidth":683,"naturalHeight":1024,"sizeSlug":"medium","sizeSlugTablet":"large","sizeSlugMobile":"large"} -->
-<div class="wp-block-uagb-image uagb-block-6a6a55e9 wp-block-uagb-image--layout-default wp-block-uagb-image--effect-static wp-block-uagb-image--align-none"><figure class="wp-block-uagb-image__figure"><img srcset="http://melomi.local/wp-content/uploads/2025/03/screenshot-200x300.jpg ,http://melomi.local/wp-content/uploads/2025/03/screenshot-683x1024.jpg 780w, http://melomi.local/wp-content/uploads/2025/03/screenshot-683x1024.jpg 360w" sizes="(max-width: 480px) 150px" src="http://melomi.local/wp-content/uploads/2025/03/screenshot-200x300.jpg" alt="" class="uag-image-41" width="200" height="300" title="screenshot" loading="lazy" role="img"/></figure></div>
-<!-- /wp:uagb/image --></div>
-<!-- /wp:uagb/container -->
-
-<!-- wp:uagb/container {"block_id":"fb854b8b","widthDesktop":40,"widthTablet":60,"justifyContentDesktop":"flex-start","topPaddingDesktop":0,"bottomPaddingDesktop":0,"leftPaddingDesktop":0,"rightPaddingDesktop":0,"widthSetByUser":true,"className":"right-side"} -->
-<div class="wp-block-uagb-container right-side uagb-block-fb854b8b"><!-- wp:navigation {"ref":409,"textColor":"ast-global-color-4","openSubmenusOnClick":true,"overlayMenu":"never","icon":"menu","overlayTextColor":"ast-global-color-2","fontSize":"large","layout":{"type":"flex","orientation":"vertical"}} /--></div>
-<!-- /wp:uagb/container --></div>
-<!-- /wp:uagb/container -->
-
-<!-- wp:uagb/container {"block_id":"cd6be9fd","topPaddingDesktop":24,"bottomPaddingDesktop":24,"leftPaddingDesktop":24,"rightPaddingDesktop":24,"className":"close-offcanvas-menu"} -->
-<div id="close-offcanvas-menu" class="wp-block-uagb-container close-offcanvas-menu uagb-block-cd6be9fd"><!-- wp:uagb/icon {"icon":"xmark","iconSize":24,"iconColor":"#ffffff","iconHoverColor":"#617278","block_id":"1c95ba45"} /--></div>
-<!-- /wp:uagb/container --></div>
-<!-- /wp:uagb/container -->
+<!-- wp:navigation {"openSubmenusOnClick":true,"overlayMenu":"never","fontSize":"large","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
