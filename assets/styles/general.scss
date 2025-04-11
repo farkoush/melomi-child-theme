@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'montserrat',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 1rem;
+    overflow-x: hidden;
+
+    background: #fff;
+    font-style: normal;
+
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    display: block;
+
+    p, span, a {
+        font-family: 'montserrat',sans-serif;
+    }
+}
+.wp-site-blocks {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    main {
+        flex: 1;
+    }
+    
+    footer {
+        margin-top: auto;
+    }
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.whitespace-nowrap
+{
+    white-space: nowrap;
+}
+
+.rounded-full{
+    border-radius: 100%;
+}
+
+.break-keep, .wp-block-uagb-advanced-heading.break-keep p{
+    word-break: keep-all !important;
+}
+

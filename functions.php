@@ -35,8 +35,7 @@ function custom_enqueue_scripts() {
 add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
 function register_my_menu() {
-	register_nav_menu('child-theme-mega-menu',__( 'Melomi Mega Menuu' ));
-    register_nav_menu('child-theme-mega-menu-small',__( 'Melomi Mega Menu - Small' ));
+	register_nav_menu('child-theme-mega-menu',__( 'Melomi Mega Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
 

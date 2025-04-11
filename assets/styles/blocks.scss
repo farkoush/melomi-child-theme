@@ -1,0 +1,29 @@
+
+
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){
+    text-decoration: none !important;
+}
+
+.wp-block-button__link{
+    .uagb-button__icon{
+        outline: none;
+    }
+}
+
+.spectra-cat-cards .wp-block-uagb-marketing-button{
+    margin-top: -64px;
+    display: flex;
+}
+.spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link{
+    width:100%;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--rect{
+	box-shadow:none !important;
+	border:none !important;
+	padding:0 !important
+}
+
+.uagb-icon-wrapper {
+    cursor: pointer;
+}

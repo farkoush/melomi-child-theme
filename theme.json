@@ -137,7 +137,7 @@
 						"src": ["file:./assets/fonts/montserrat/montserrat-italic-variablefont_wght.ttf"]
 					}
 				],
-				"fontFamily": "Montserrat",
+				"fontFamily": "montserrat,sans-serif",
 				"name": "Montserrat",
 				"slug": "body"
 			},
@@ -154,7 +154,7 @@
 		],
 		"fontSizes": [
 		  {
-			"size": "13px",
+			"size": "14px",
 			"name": "Small",
 			"slug": "small"
 		  },
@@ -177,7 +177,7 @@
 	  },
 	  "layout": {
 		"contentSize": "1440px",
-		"wideSize": "1440px",
+		"wideSize": "1200px",
 		"fullSize": "none"
 	  }
 	},
