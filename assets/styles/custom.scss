@@ -1,3 +1,6 @@
+.secondary-text {
+  color: #617278 !important
+}
 .circle-button a.uagb-buttons-repeater{ 
     display: inline-flex;
     flex-direction: column;
@@ -13,11 +16,11 @@
 .circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__link,
 .circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__link 
 {   
-    max-width: 100%;
+    // max-width: 100%;
+    max-width: 70%;
     white-space: nowrap;
     position: relative;
     text-align: center;
-    /* left: 45px;  */
     font-family: "montserrat", sans-serif;    
     font-weight: 700;
     font-size: 16px;
@@ -64,7 +67,7 @@
 
 .circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon, 
 .circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon {
-    transform: translate(72px, 8px);
+    transform: translate(40px, 8px);
     position: relative;
     z-index: 10;
 }
@@ -82,15 +85,15 @@
     height: 8px;
     border-top: 1px solid #4A4A4A;
     border-left: 1px solid #4A4A4A;
-    transform: rotate(135deg) translate(5px, 5px);
+    transform: rotate(135deg) translate(6px, 6px);
 }
 
 .circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:before,
 .circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:before{
     content: "";
     display: block;
-    width: 136px;
-    height: 1px;
+    width: 80px;
+    height: .5px;
     background-color: #4A4A4A;
     left: 0;
     top: 0;
@@ -348,6 +351,11 @@ button-secondary{
   }
 /* Secondary Button*/
 
-.stroke-light-pink h1 {
+.stroke-light {
+  p{
+    -webkit-text-stroke: .5px #FEF5F6;
+  }
+  h1{
     -webkit-text-stroke: 1px #FEF5F6;
+  }
 }

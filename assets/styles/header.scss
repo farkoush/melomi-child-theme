@@ -291,18 +291,33 @@ $hover-color:#617278;
     }
 }
 
+header.wp-block-template-part{
+    position: sticky;
+    top: 0;
+    z-index: 999; /* بالا نگهش می‌داره */
+    backdrop-filter: saturate(180%) blur(15px);
+    background-color: rgba(255, 255, 255, 0.7);
+}
 
 .footer-pattern-container, .main-menu-pattern-container{
-    padding: 0 24px !important;
+    padding: 0 12px !important;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px){
     .footer-pattern-container, .main-menu-pattern-container{
-        padding: 0 48px !important;
+        padding: 0 24px!important;
     }
     .offcanvas-menu{
         .close-offcanvas-menu {
-            top: 48px;
-            right: 48px;
+            top: 24px;
+            right: 24px;
+        }
+    }
+}
+@media only screen and (min-width: 1199px){
+    .offcanvas-menu{
+        .close-offcanvas-menu {
+            top: 46px;
+            right: 152px;
         }
     }
 }

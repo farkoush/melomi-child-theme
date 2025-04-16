@@ -10,10 +10,10 @@ Text Domain: twentytwentyfour-child
 Template: twentytwentyfour
 */
 
-@import "./assets/styles/general.scss";
-@import "./assets/styles/header.scss";
-@import "./assets/styles/custom.scss";
-@import "./assets/styles/blocks.scss";
+@import "./assets/styles/general.scss",
+"./assets/styles/header.scss",
+"./assets/styles/custom.scss",
+"./assets/styles/blocks.scss";
 
 
 /* WPForms fixes */

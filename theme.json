@@ -176,8 +176,8 @@
 		]
 	  },
 	  "layout": {
-		"contentSize": "1440px",
-		"wideSize": "1200px",
+		"contentSize": "1200px",
+		"wideSize": "100%",
 		"fullSize": "none"
 	  }
 	},
@@ -187,6 +187,22 @@
 			"typography": {
 			  "textDecoration": "none"
 			}
+		}
+	  },
+	  "blocks": {
+		"uagb/container": {
+			"topPaddingDesktop":"48px",
+			"bottomPaddingDesktop":"48px",
+			"leftPaddingDesktop":"48px",
+			"rightPaddingDesktop":"48px",
+			"topPaddingTablet":"24px",
+			"bottomPaddingTablet":"24px",
+			"leftPaddingTablet":"24px",
+			"rightPaddingTablet":"24px",
+			"topPaddingMobile":"12px",
+			"bottomPaddingMobile":"12px",
+			"leftPaddingMobile":"12px",
+			"rightPaddingMobile":"12px"
 		}
 	  }
 	}

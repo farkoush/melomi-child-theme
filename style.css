@@ -44,160 +44,6 @@ body p, body span, body a {
   margin-top: auto;
 }
 
-/* WPForms fixes */
-/* Initial field looks */
-.wpforms-container input[type=date],
-.wpforms-container input[type=datetime],
-.wpforms-container input[type=datetime-local],
-.wpforms-container input[type=email],
-.wpforms-container input[type=month],
-.wpforms-container input[type=number],
-.wpforms-container input[type=password],
-.wpforms-container input[type=range],
-.wpforms-container input[type=search],
-.wpforms-container input[type=tel],
-.wpforms-container input[type=text],
-.wpforms-container input[type=time],
-.wpforms-container input[type=url],
-.wpforms-container input[type=week],
-.wpforms-container select,
-.wpforms-container textarea {
-  background: #fff;
-  border-width: 0 0 1px 0;
-  color: var(--ast-global-color-2);
-  opacity: 0.5;
-}
-
-/* On focus */
-.wpforms-container input:focus,
-.wpforms-container select:focus,
-.wpforms-container textarea:focus {
-  outline: none;
-  opacity: 1;
-  border-color: var(--ast-global-color-0);
-}
-
-/* Don't allow resizing the Message box */
-.wpforms-container textarea {
-  resize: none;
-}
-
-/* Message box fixed height */
-.wpforms-container .wpforms-field-textarea textarea.wpforms-field-medium {
-  height: 136px;
-}
-
-/* Button size & font size */
-.wpforms-container button {
-  padding: 15px 34px;
-  font-size: 15px;
-}
-
-/* WPForms done */
-/* Footer 2 big columns on sides and 1 small one in the middle */
-.ast-builder-grid-row-3-equal .ast-builder-grid-row {
-  grid-template-columns: 3fr 1fr 3fr;
-}
-
-.circle-button a.uagb-buttons-repeater {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 50%;
-  border: none !important;
-  background: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
-}
-
-.circle-button a.uagb-buttons-repeater:focus {
-  outline: none;
-}
-
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__link,
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__link {
-  max-width: 100%;
-  white-space: nowrap;
-  position: relative;
-  text-align: center;
-  /* left: 45px;  */
-  font-family: "montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #4A4A4A;
-  padding: 0 10px;
-}
-
-/* circle button large */
-.circle-button.circle-button-large {
-  position: relative;
-  width: 232px;
-}
-
-.circle-button.circle-button-large a.uagb-buttons-repeater {
-  width: 180px !important;
-  height: 180px !important;
-}
-
-/* circle button small */
-.circle-button.circle-button-small,
-.circle-button.circle-button-large {
-  position: relative;
-  width: 196px;
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater,
-.circle-button.circle-button-large a.uagb-buttons-repeater {
-  width: 104px !important;
-  height: 104px !important;
-}
-
-/* At the top level of your code */
-@media screen and (min-width: 570px) {
-  /* circle button large */
-  .circle-button.circle-button-large {
-    position: relative;
-    width: 196px;
-  }
-  .circle-button.circle-button-large a.uagb-buttons-repeater {
-    width: 104px !important;
-    height: 104px !important;
-  }
-}
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon {
-  transform: translate(72px, 8px);
-  position: relative;
-  z-index: 10;
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon svg,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon svg {
-  display: none;
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:after,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-top: 1px solid #4A4A4A;
-  border-left: 1px solid #4A4A4A;
-  transform: rotate(135deg) translate(5px, 5px);
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:before,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:before {
-  content: "";
-  display: block;
-  width: 136px;
-  height: 1px;
-  background-color: #4A4A4A;
-  left: 0;
-  top: 0;
-}
-
 .align-self-end {
   align-self: flex-end;
 }
@@ -210,35 +56,12 @@ body p, body span, body a {
   white-space: nowrap;
 }
 
-.uagb-icon-wrapper {
-  cursor: pointer;
-}
-
-.gradient {
-  background-image: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
-}
-
-.gradient:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-
 .rounded-full {
   border-radius: 100%;
 }
 
 .break-keep, .wp-block-uagb-advanced-heading.break-keep p {
   word-break: keep-all !important;
-}
-
-.spectra-cat-cards .wp-block-uagb-marketing-button {
-  margin-top: -64px;
-  display: flex;
-}
-
-.spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link {
-  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
@@ -489,25 +312,31 @@ body p, body span, body a {
   flex-grow: 0 !important;
 }
 
-:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover) {
-  text-decoration: none !important;
-}
-
-.wp-block-button__link .uagb-button__icon {
-  outline: none;
+header.wp-block-template-part {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* بالا نگهش می‌داره */
+  backdrop-filter: saturate(180%) blur(15px);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-pattern-container, .main-menu-pattern-container {
-  padding: 0 24px !important;
+  padding: 0 12px !important;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
   .footer-pattern-container, .main-menu-pattern-container {
-    padding: 0 48px !important;
+    padding: 0 24px !important;
   }
   .offcanvas-menu .close-offcanvas-menu {
-    top: 48px;
-    right: 48px;
+    top: 24px;
+    right: 24px;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .offcanvas-menu .close-offcanvas-menu {
+    top: 46px;
+    right: 152px;
   }
 }
 .footer-pattern-container .wp-block-site-logo {
@@ -517,7 +346,7 @@ body p, body span, body a {
   content: "";
   display: block;
   width: 100%;
-  height: 1px;
+  height: 0.5px;
   background-color: #4a4a4a;
   position: absolute;
   bottom: 50%;
@@ -533,10 +362,133 @@ body p, body span, body a {
   margin-top: 0 !important;
 }
 
-html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--rect {
-  box-shadow: none !important;
+.offcanvas-menu .wp-block-heading {
+  font-family: "montserrat", sans-serif !important;
+}
+
+.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle + .wp-block-navigation__submenu-icon {
+  display: none !important;
+}
+
+.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle:after {
+  content: "\e917";
+  font-family: "icomoon";
+}
+
+.offcanvas-menu .right-side .wp-block-navigation__container .wp-block-navigation-item .wp-block-navigation-item__content {
+  width: 100%;
+}
+
+.secondary-text {
+  color: #617278 !important;
+}
+
+.circle-button a.uagb-buttons-repeater {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
   border: none !important;
-  padding: 0 !important;
+  background: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+
+.circle-button a.uagb-buttons-repeater:focus {
+  outline: none;
+}
+
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__link,
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__link {
+  max-width: 70%;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #4A4A4A;
+  padding: 0 10px;
+}
+
+/* circle button large */
+.circle-button.circle-button-large {
+  position: relative;
+  width: 232px;
+}
+
+.circle-button.circle-button-large a.uagb-buttons-repeater {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+/* circle button small */
+.circle-button.circle-button-small,
+.circle-button.circle-button-large {
+  position: relative;
+  width: 196px;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater,
+.circle-button.circle-button-large a.uagb-buttons-repeater {
+  width: 104px !important;
+  height: 104px !important;
+}
+
+/* At the top level of your code */
+@media screen and (min-width: 570px) {
+  /* circle button large */
+  .circle-button.circle-button-large {
+    position: relative;
+    width: 196px;
+  }
+  .circle-button.circle-button-large a.uagb-buttons-repeater {
+    width: 104px !important;
+    height: 104px !important;
+  }
+}
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon {
+  transform: translate(40px, 8px);
+  position: relative;
+  z-index: 10;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon svg,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon svg {
+  display: none;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:after,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #4A4A4A;
+  border-left: 1px solid #4A4A4A;
+  transform: rotate(135deg) translate(6px, 6px);
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:before,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 0.5px;
+  background-color: #4A4A4A;
+  left: 0;
+  top: 0;
+}
+
+.gradient {
+  background-image: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+
+.gradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .circles {
@@ -653,7 +605,8 @@ html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--rect {
     width: 150px;
   }
 }
-button {
+/* Secondary Button*/
+button-secondary {
   display: inline-block;
   position: relative;
   background: none;
@@ -664,7 +617,7 @@ button {
   margin: 20px 30px;
   background: rgba(0, 0, 0, 0.09);
 }
-button::before, button::after {
+button-secondary::before, button-secondary::after {
   content: "";
   width: 0;
   height: 4px;
@@ -672,11 +625,11 @@ button::before, button::after {
   transition: all 0.2s linear;
   background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
 }
-button span {
+button-secondary span {
   display: block;
   padding: 25px 80px;
 }
-button span::before, button span::after {
+button-secondary span::before, button-secondary span::after {
   content: "";
   width: 4px;
   height: 0;
@@ -684,10 +637,10 @@ button span::before, button span::after {
   transition: all 0.2s linear;
   background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
 }
-button:hover::before, button:hover:after {
+button-secondary:hover::before, button-secondary:hover:after {
   width: 100%;
 }
-button:hover span::before, button:hover span::after {
+button-secondary:hover span::before, button-secondary:hover span::after {
   height: 100%;
 }
 
@@ -730,6 +683,96 @@ button:hover span::before, button:hover span::after {
 
 .btn-3:hover span::before {
   transition-delay: 0.6s;
+}
+
+/* Secondary Button*/
+.stroke-light p {
+  -webkit-text-stroke: 0.5px #FEF5F6;
+}
+.stroke-light h1 {
+  -webkit-text-stroke: 1px #FEF5F6;
+}
+
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover) {
+  text-decoration: none !important;
+}
+
+.wp-block-button__link .uagb-button__icon {
+  outline: none;
+}
+
+.spectra-cat-cards .wp-block-uagb-marketing-button {
+  margin-top: -64px;
+  display: flex;
+}
+
+.spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link {
+  width: 100%;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--rect {
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.uagb-icon-wrapper {
+  cursor: pointer;
+}
+
+/* WPForms fixes */
+/* Initial field looks */
+.wpforms-container input[type=date],
+.wpforms-container input[type=datetime],
+.wpforms-container input[type=datetime-local],
+.wpforms-container input[type=email],
+.wpforms-container input[type=month],
+.wpforms-container input[type=number],
+.wpforms-container input[type=password],
+.wpforms-container input[type=range],
+.wpforms-container input[type=search],
+.wpforms-container input[type=tel],
+.wpforms-container input[type=text],
+.wpforms-container input[type=time],
+.wpforms-container input[type=url],
+.wpforms-container input[type=week],
+.wpforms-container select,
+.wpforms-container textarea {
+  background: #fff;
+  border-width: 0 0 1px 0;
+  color: var(--ast-global-color-2);
+  opacity: 0.5;
+}
+
+/* On focus */
+.wpforms-container input:focus,
+.wpforms-container select:focus,
+.wpforms-container textarea:focus {
+  outline: none;
+  opacity: 1;
+  border-color: var(--ast-global-color-0);
+}
+
+/* Don't allow resizing the Message box */
+.wpforms-container textarea {
+  resize: none;
+}
+
+/* Message box fixed height */
+.wpforms-container .wpforms-field-textarea textarea.wpforms-field-medium {
+  height: 136px;
+}
+
+/* Button size & font size */
+.wpforms-container button {
+  padding: 15px 34px;
+  font-size: 15px;
+}
+
+/* WPForms done */
+/* Footer 2 big columns on sides and 1 small one in the middle */
+.ast-builder-grid-row-3-equal .ast-builder-grid-row {
+  grid-template-columns: 3fr 1fr 3fr;
 }
 
 /*# sourceMappingURL=style.css.map */
