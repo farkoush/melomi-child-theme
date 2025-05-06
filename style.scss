@@ -9,11 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentytwentyfour-child
 Template: twentytwentyfour
 */
-
-@import "./assets/styles/general.scss",
-"./assets/styles/header.scss",
-"./assets/styles/custom.scss",
-"./assets/styles/blocks.scss";
+@use "./assets/styles/index";
 
 
 /* WPForms fixes */

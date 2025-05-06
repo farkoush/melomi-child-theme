@@ -2,6 +2,9 @@ html, body {
     height: 100%;
     margin: 0;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
     font-family: 'montserrat',sans-serif;
     font-weight: 300;

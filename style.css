@@ -15,6 +15,10 @@ html, body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "montserrat", sans-serif;
   font-weight: 300;
@@ -62,6 +66,414 @@ body p, body span, body a {
 
 .break-keep, .wp-block-uagb-advanced-heading.break-keep p {
   word-break: keep-all !important;
+}
+
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover) {
+  text-decoration: none !important;
+}
+
+.wp-block-button__link .uagb-button__icon {
+  outline: none;
+}
+
+.spectra-cat-cards .wp-block-uagb-marketing-button {
+  margin-top: -64px;
+  display: flex;
+}
+
+.spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link {
+  width: 100%;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--rect {
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background-color: transparent;
+}
+
+.uagb-icon-wrapper {
+  cursor: pointer;
+}
+
+html#ecwid_html body#ecwid_body .ecwid.ecwid-SingleProduct-v2 {
+  box-shadow: none !important;
+  text-align: left !important;
+  padding-bottom: 0 !important;
+  border: 0 !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid.ecwid-SingleProduct-v2 div[customprop=addtobag] {
+  margin-top: 0 !important;
+}
+
+.ecwid-shopping-cart-search {
+  text-align: center;
+}
+
+.home-products .ecwid-SingleProduct-picture img {
+  width: 100% !important;
+}
+
+a, .swiper-pagination-bullet-active {
+  outline: none !important;
+}
+
+.wpml-ls-current-language, .wpml-ls-display {
+  display: none !important;
+}
+
+.wpml-ls-link br {
+  display: none !important;
+}
+
+.wpml-ls ul, .ec-cart-widget {
+  display: flex;
+  align-items: center;
+}
+
+.wpml-ls-item a {
+  width: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #4c4c4c !important;
+}
+
+.secondary-text {
+  color: #617278 !important;
+}
+
+.circle-button a.uagb-buttons-repeater {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  border: none !important;
+  background: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+
+.circle-button a.uagb-buttons-repeater:focus {
+  outline: none;
+}
+
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__link,
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__link {
+  max-width: 70%;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #4A4A4A;
+  padding: 0 10px;
+}
+
+/* circle button large */
+.circle-button.circle-button-large {
+  position: relative;
+  width: 232px;
+}
+
+.circle-button.circle-button-large a.uagb-buttons-repeater {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+/* circle button small */
+.circle-button.circle-button-small,
+.circle-button.circle-button-large {
+  position: relative;
+  width: 196px;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater,
+.circle-button.circle-button-large a.uagb-buttons-repeater {
+  width: 104px !important;
+  height: 104px !important;
+}
+
+/* At the top level of your code */
+@media screen and (min-width: 570px) {
+  /* circle button large */
+  .circle-button.circle-button-large {
+    position: relative;
+    width: 196px;
+  }
+  .circle-button.circle-button-large a.uagb-buttons-repeater {
+    width: 104px !important;
+    height: 104px !important;
+  }
+}
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon {
+  transform: translate(40px, 8px);
+  position: relative;
+  z-index: 10;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon svg,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon svg {
+  display: none;
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:after,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #4A4A4A;
+  border-left: 1px solid #4A4A4A;
+  transform: rotate(135deg) translate(6px, 6px);
+}
+
+.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:before,
+.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 0.5px;
+  background-color: #4A4A4A;
+  left: 0;
+  top: 0;
+}
+
+.gradient {
+  background-image: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+
+.gradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.circles {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(40px);
+}
+
+/* Yellow Circle */
+.yellow {
+  background-image: linear-gradient(to right, #fce658 15%, #fce973 85%);
+  height: 300px;
+  width: 300px;
+  left: 5%;
+  top: 30%;
+  animation: transform 10s linear infinite both alternate, movement 10s linear infinite both;
+}
+
+/* Orange Circle */
+.orange {
+  background-image: linear-gradient(to right, #ff756e 15%, #fe8b85 85%);
+  height: 200px;
+  width: 200px;
+  left: 25%;
+  top: 50%;
+  animation: transform 15s linear infinite both alternate, movement 7s linear infinite both;
+}
+
+/* Pink Circle */
+.pink {
+  background-image: linear-gradient(to right, #f26afc 15%, #f6a6fc 85%);
+  height: 350px;
+  width: 350px;
+  left: 40%;
+  top: 30%;
+  animation: transform 13s linear infinite both alternate, movement 13s linear infinite both;
+}
+
+/* Cyan Circle */
+.cyan {
+  height: 400px;
+  width: 400px;
+  left: 60%;
+  top: 40%;
+  background-image: linear-gradient(to right, #70eafa 15%, #2ae2fa 85%);
+  animation: transform 11s linear infinite both alternate, movement 15s linear infinite both;
+}
+
+/* Animations for Circles */
+@keyframes transform {
+  0%, 20% {
+    border-radius: 37% 63% 51% 49%/37% 35% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36%/64% 48% 52% 26%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49%/30% 30% 70% 73%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58%/51% 51% 49% 59%;
+  }
+  100% {
+    border-radius: 33% 67% 70% 30%/30% 40% 70% 70%;
+  }
+}
+@keyframes movement {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotateY(10deg) scale(1.25);
+  }
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+  .yellow {
+    left: 0;
+    top: 40%;
+    height: 200px;
+    width: 200px;
+  }
+  .orange {
+    height: 150px;
+    width: 150px;
+  }
+  .pink {
+    height: 225px;
+    width: 225px;
+  }
+  .cyan {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .yellow {
+    height: 150px;
+    width: 150px;
+  }
+  .orange {
+    height: 100px;
+    width: 100px;
+  }
+  .pink {
+    height: 175px;
+    width: 175px;
+  }
+  .cyan {
+    height: 150px;
+    width: 150px;
+  }
+}
+/* Secondary Button*/
+.button-secondary {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: rgba(0, 0, 0, 0.09);
+}
+.button-secondary::before, .button-secondary::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+.button-secondary span {
+  display: block;
+  padding: 25px 80px;
+}
+.button-secondary span::before, .button-secondary span::after {
+  content: "";
+  width: 4px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
+}
+.button-secondary:hover::before, .button-secondary:hover:after {
+  width: 100%;
+}
+.button-secondary:hover span::before, .button-secondary:hover span::after {
+  height: 100%;
+}
+
+/*----- button 3 -----*/
+.btn-3::after {
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+
+.btn-3 span::after {
+  transition-delay: 0.4s;
+  right: 0;
+  bottom: 0;
+}
+
+.btn-3::before {
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+}
+
+.btn-3 span::before {
+  transition-delay: 0s;
+  left: 0;
+  top: 0;
+}
+
+.btn-3:hover::after {
+  transition-delay: 0s;
+}
+
+.btn-3:hover span::after {
+  transition-delay: 0.2s;
+}
+
+.btn-3:hover::before {
+  transition-delay: 0.4s;
+}
+
+.btn-3:hover span::before {
+  transition-delay: 0.6s;
+}
+
+/* Secondary Button*/
+.stroke-light p {
+  -webkit-text-stroke: 0.5px #FEF5F6;
+}
+.stroke-light h1 {
+  -webkit-text-stroke: 1px #FEF5F6;
+}
+
+.melomi-services p {
+  margin: 0 !important;
+}
+
+.melomi-services h2, .melomi-services h3, .melomi-services p {
+  color: #4c4c4c !important;
+}
+
+.wp-block-navigation__submenu-container {
+  padding: 0 16px !important;
+}
+
+.custom-logo h1:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #FEF5F6;
+  position: absolute;
+  top: 40%;
 }
 
 @media screen and (min-width: 600px) {
@@ -377,347 +789,6 @@ header.wp-block-template-part {
 
 .offcanvas-menu .right-side .wp-block-navigation__container .wp-block-navigation-item .wp-block-navigation-item__content {
   width: 100%;
-}
-
-.secondary-text {
-  color: #617278 !important;
-}
-
-.circle-button a.uagb-buttons-repeater {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 50%;
-  border: none !important;
-  background: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
-}
-
-.circle-button a.uagb-buttons-repeater:focus {
-  outline: none;
-}
-
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__link,
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__link {
-  max-width: 70%;
-  white-space: nowrap;
-  position: relative;
-  text-align: center;
-  font-family: "montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #4A4A4A;
-  padding: 0 10px;
-}
-
-/* circle button large */
-.circle-button.circle-button-large {
-  position: relative;
-  width: 232px;
-}
-
-.circle-button.circle-button-large a.uagb-buttons-repeater {
-  width: 180px !important;
-  height: 180px !important;
-}
-
-/* circle button small */
-.circle-button.circle-button-small,
-.circle-button.circle-button-large {
-  position: relative;
-  width: 196px;
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater,
-.circle-button.circle-button-large a.uagb-buttons-repeater {
-  width: 104px !important;
-  height: 104px !important;
-}
-
-/* At the top level of your code */
-@media screen and (min-width: 570px) {
-  /* circle button large */
-  .circle-button.circle-button-large {
-    position: relative;
-    width: 196px;
-  }
-  .circle-button.circle-button-large a.uagb-buttons-repeater {
-    width: 104px !important;
-    height: 104px !important;
-  }
-}
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon {
-  transform: translate(40px, 8px);
-  position: relative;
-  z-index: 10;
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon svg,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon svg {
-  display: none;
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:after,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-top: 1px solid #4A4A4A;
-  border-left: 1px solid #4A4A4A;
-  transform: rotate(135deg) translate(6px, 6px);
-}
-
-.circle-button.circle-button-small a.uagb-buttons-repeater .uagb-button__icon:before,
-.circle-button.circle-button-large a.uagb-buttons-repeater .uagb-button__icon:before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 0.5px;
-  background-color: #4A4A4A;
-  left: 0;
-  top: 0;
-}
-
-.gradient {
-  background-image: linear-gradient(90deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
-}
-
-.gradient:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.circles {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.8;
-  filter: blur(40px);
-}
-
-/* Yellow Circle */
-.yellow {
-  background-image: linear-gradient(to right, #fce658 15%, #fce973 85%);
-  height: 300px;
-  width: 300px;
-  left: 5%;
-  top: 30%;
-  animation: transform 10s linear infinite both alternate, movement 10s linear infinite both;
-}
-
-/* Orange Circle */
-.orange {
-  background-image: linear-gradient(to right, #ff756e 15%, #fe8b85 85%);
-  height: 200px;
-  width: 200px;
-  left: 25%;
-  top: 50%;
-  animation: transform 15s linear infinite both alternate, movement 7s linear infinite both;
-}
-
-/* Pink Circle */
-.pink {
-  background-image: linear-gradient(to right, #f26afc 15%, #f6a6fc 85%);
-  height: 350px;
-  width: 350px;
-  left: 40%;
-  top: 30%;
-  animation: transform 13s linear infinite both alternate, movement 13s linear infinite both;
-}
-
-/* Cyan Circle */
-.cyan {
-  height: 400px;
-  width: 400px;
-  left: 60%;
-  top: 40%;
-  background-image: linear-gradient(to right, #70eafa 15%, #2ae2fa 85%);
-  animation: transform 11s linear infinite both alternate, movement 15s linear infinite both;
-}
-
-/* Animations for Circles */
-@keyframes transform {
-  0%, 20% {
-    border-radius: 37% 63% 51% 49%/37% 35% 35% 63%;
-  }
-  40% {
-    border-radius: 36% 64% 64% 36%/64% 48% 52% 26%;
-  }
-  60% {
-    border-radius: 37% 63% 51% 49%/30% 30% 70% 73%;
-  }
-  80% {
-    border-radius: 40% 60% 42% 58%/51% 51% 49% 59%;
-  }
-  100% {
-    border-radius: 33% 67% 70% 30%/30% 40% 70% 70%;
-  }
-}
-@keyframes movement {
-  0%, 100% {
-    transform: none;
-  }
-  50% {
-    transform: translate(50%, 20%) rotateY(10deg) scale(1.25);
-  }
-}
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  /* Styles for tablets and smaller devices */
-  .yellow {
-    left: 0;
-    top: 40%;
-    height: 200px;
-    width: 200px;
-  }
-  .orange {
-    height: 150px;
-    width: 150px;
-  }
-  .pink {
-    height: 225px;
-    width: 225px;
-  }
-  .cyan {
-    height: 200px;
-    width: 200px;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* Styles for mobile devices */
-  .yellow {
-    height: 150px;
-    width: 150px;
-  }
-  .orange {
-    height: 100px;
-    width: 100px;
-  }
-  .pink {
-    height: 175px;
-    width: 175px;
-  }
-  .cyan {
-    height: 150px;
-    width: 150px;
-  }
-}
-/* Secondary Button*/
-button-secondary {
-  display: inline-block;
-  position: relative;
-  background: none;
-  border: none;
-  color: yellow;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 20px 30px;
-  background: rgba(0, 0, 0, 0.09);
-}
-button-secondary::before, button-secondary::after {
-  content: "";
-  width: 0;
-  height: 4px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
-}
-button-secondary span {
-  display: block;
-  padding: 25px 80px;
-}
-button-secondary span::before, button-secondary span::after {
-  content: "";
-  width: 4px;
-  height: 0;
-  position: absolute;
-  transition: all 0.2s linear;
-  background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
-}
-button-secondary:hover::before, button-secondary:hover:after {
-  width: 100%;
-}
-button-secondary:hover span::before, button-secondary:hover span::after {
-  height: 100%;
-}
-
-/*----- button 3 -----*/
-.btn-3::after {
-  left: 0;
-  bottom: 0;
-  transition-delay: 0.6s;
-}
-
-.btn-3 span::after {
-  transition-delay: 0.4s;
-  right: 0;
-  bottom: 0;
-}
-
-.btn-3::before {
-  right: 0;
-  top: 0;
-  transition-delay: 0.2s;
-}
-
-.btn-3 span::before {
-  transition-delay: 0s;
-  left: 0;
-  top: 0;
-}
-
-.btn-3:hover::after {
-  transition-delay: 0s;
-}
-
-.btn-3:hover span::after {
-  transition-delay: 0.2s;
-}
-
-.btn-3:hover::before {
-  transition-delay: 0.4s;
-}
-
-.btn-3:hover span::before {
-  transition-delay: 0.6s;
-}
-
-/* Secondary Button*/
-.stroke-light p {
-  -webkit-text-stroke: 0.5px #FEF5F6;
-}
-.stroke-light h1 {
-  -webkit-text-stroke: 1px #FEF5F6;
-}
-
-:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover) {
-  text-decoration: none !important;
-}
-
-.wp-block-button__link .uagb-button__icon {
-  outline: none;
-}
-
-.spectra-cat-cards .wp-block-uagb-marketing-button {
-  margin-top: -64px;
-  display: flex;
-}
-
-.spectra-cat-cards .wp-block-uagb-marketing-button .uagb-marketing-btn__link {
-  width: 100%;
-}
-
-html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--rect {
-  box-shadow: none !important;
-  border: none !important;
-  padding: 0 !important;
-}
-
-.uagb-icon-wrapper {
-  cursor: pointer;
 }
 
 /* WPForms fixes */

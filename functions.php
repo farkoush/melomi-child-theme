@@ -34,11 +34,11 @@ function custom_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
+
 function register_my_menu() {
 	register_nav_menu('child-theme-mega-menu',__( 'Melomi Mega Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
-
 
 function my_child_theme_register_block_patterns() {
     register_block_pattern(
@@ -49,14 +49,6 @@ function my_child_theme_register_block_patterns() {
             'content'     => file_get_contents( get_theme_file_path( '/patterns/mega-menu.php' ) ),
         )
     );
-    // register_block_pattern(
-    //     'twentytwentyfour-child/footer-defult',
-    //     array(
-    //         'title'       => __( 'Footer defult', 'text-domain' ),
-    //         'description' => __( 'A custom mega menu pattern.', 'text-domain' ),
-    //         'content'     => file_get_contents( get_theme_file_path( '/patterns/footer-defult.php' ) ),
-    //     )
-    // );
 }
 add_action( 'init', 'my_child_theme_register_block_patterns' );
 
@@ -71,3 +63,8 @@ add_action('init', function () {
         ]
     );
 });
+
+function add_google_verification_meta_tag() {
+    echo '<meta name="google-site-verification" content="1omwl_DX9Q3elb95pyFhx6RFN-xAA5ys8m8DLQVta7A" />';
+}
+add_action('wp_head', 'add_google_verification_meta_tag');

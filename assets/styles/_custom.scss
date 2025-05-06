@@ -226,12 +226,12 @@
   }
   
 /* Secondary Button*/
-button-secondary{
+.button-secondary{
     display: inline-block;
     position: relative;
     background: none;
     border: none;
-    color: yellow;
+    color: #fff;
     font-size: 18px;
     cursor: pointer;
     margin: 20px 30px;
@@ -243,7 +243,6 @@ button-secondary{
         height: 4px;
         position: absolute;
         transition: all 0.2s linear;
-        // background: red;
         background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
     }
     span {
@@ -255,7 +254,6 @@ button-secondary{
         height:0;
         position: absolute;
         transition: all 0.2s linear;
-        // background: green;
         background-image: linear-gradient(180deg, #DFF2FE 0%, rgba(253, 243, 254, 0.960784) 100%);
 
       }
@@ -358,4 +356,25 @@ button-secondary{
   h1{
     -webkit-text-stroke: 1px #FEF5F6;
   }
+}
+
+.melomi-services p {
+	margin: 0 !important
+}
+.melomi-services h2, .melomi-services h3,.melomi-services p{
+	color: #4c4c4c !important
+}
+
+.wp-block-navigation__submenu-container {
+	padding: 0 16px !important;
+}
+
+.custom-logo h1:before {
+	content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #FEF5F6;
+    position: absolute;
+    top: 40%;
 }
